@@ -1,6 +1,7 @@
 import 'package:dormitory_user_app/responsive/mobile_layout_screen.dart';
 import 'package:dormitory_user_app/responsive/responsive_layout_screen.dart';
 import 'package:dormitory_user_app/responsive/web_layout_screen.dart';
+import 'package:dormitory_user_app/screen/admin_dashboard.dart';
 import 'package:dormitory_user_app/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dormitory_user_app/util/color.dart';
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: mobileBackgroundColor,
       ),
-      home: const SplashScreen(),
+      home: const AdminDashboard(),//SplashScreen(),
       
       /*const ResponsiveLayout(
         mobileScreenLayout: MobileScreenLayout(), 
