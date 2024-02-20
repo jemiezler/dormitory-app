@@ -1,6 +1,7 @@
 import 'package:dormitory_user_app/responsive/mobile_layout_screen.dart';
 import 'package:dormitory_user_app/responsive/responsive_layout_screen.dart';
 import 'package:dormitory_user_app/responsive/web_layout_screen.dart';
+import 'package:dormitory_user_app/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:dormitory_user_app/util/color.dart';
 
@@ -19,10 +20,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: mobileBackgroundColor,
       ),
-      home: const ResponsiveLayout(
+      home: const SplashScreen(),
+      
+      /*const ResponsiveLayout(
         mobileScreenLayout: MobileScreenLayout(), 
         webScreenLayout: WebScreenLayout(),
-        ),
+        ),*/
     );
   }
 }
