@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Dormitory APP',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light().copyWith(
-        scaffoldBackgroundColor: mobileBackgroundColor,
+        scaffoldBackgroundColor: grey6,
       ),
       home: const AdminDashboard(),//SplashScreen(),
       
