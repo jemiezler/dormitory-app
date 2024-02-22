@@ -13,14 +13,12 @@ class _SignupState extends State<Signup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: Column(
+      body: Column(
           children: [
             _buildHeader(),
             _buildSSO(),
             _emailSignup(context),
           ],
-        ),
       ),
     );
   }
