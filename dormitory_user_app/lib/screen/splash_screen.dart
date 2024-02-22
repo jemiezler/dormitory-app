@@ -37,7 +37,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
       body: Container(
         width: double.infinity,
         decoration: const BoxDecoration(
-          color: Colors.black12,
+          color: Color.fromARGB(255, 0, 0, 0),
         ),
         child: const Column(
           mainAxisAlignment: MainAxisAlignment.center,

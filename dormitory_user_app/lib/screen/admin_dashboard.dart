@@ -1,3 +1,4 @@
+import 'package:dormitory_user_app/navigation/custom_nav.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:dormitory_user_app/util/color.dart' as AppColors;
@@ -14,7 +15,8 @@ class _AdminDashboardState extends State<AdminDashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
+      bottomNavigationBar: customNavber(),
+      body: SingleChildScrollView(
         child: SafeArea(
           top: true,
           child: Container(
@@ -76,13 +78,11 @@ class _AdminDashboardState extends State<AdminDashboard> {
                       children: [
                         Column(
                           children: [
-                            Container(
-                              child: Text(
+                            Text(
                                 'Rental Status',
                                 style: TextStyle(
                                     fontSize: 26, fontWeight: FontWeight.w700),
                               ),
-                            ),
                           ],
                         ),
                         SizedBox(
@@ -110,6 +110,12 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                             fontSize: 20,
                                             fontWeight: FontWeight.w600),
                                       ),
+                                      Text(
+                                        '0',
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            fontWeight: FontWeight.w800),
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -134,6 +140,12 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                         style: TextStyle(
                                             fontSize: 20,
                                             fontWeight: FontWeight.w600),
+                                      ),
+                                      Text(
+                                        '0',
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            fontWeight: FontWeight.w800),
                                       ),
                                     ],
                                   ),
@@ -160,6 +172,12 @@ class _AdminDashboardState extends State<AdminDashboard> {
                                             fontSize: 20,
                                             fontWeight: FontWeight.w600),
                                       ),
+                                      Text(
+                                        '0',
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            fontWeight: FontWeight.w800),
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -175,9 +193,156 @@ class _AdminDashboardState extends State<AdminDashboard> {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   child: Container(
-                    
+                    width: double.infinity,
+                    height: 100,
+                    decoration: BoxDecoration(
+                      color: Colors.amber
+                    ),
                   ),
                 ),
+
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  child: Container(
+                    width: double.infinity,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Column(
+                          children: [
+                            Text(
+                                'Rental Status',
+                                style: TextStyle(
+                                    fontSize: 26, fontWeight: FontWeight.w700),
+                              ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(2),
+                                child: Container(
+                                  decoration: (const BoxDecoration(
+                                      color: AppColors.grey6,
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(18)))),
+                                  height: 120,
+                                  child: Column(
+                                    children: [
+                                      SizedBox(
+                                        height: 15,
+                                      ),
+                                      Text(
+                                        'Active',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                      Text(
+                                        '0',
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            fontWeight: FontWeight.w800),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(2.0),
+                                child: Container(
+                                  decoration: (const BoxDecoration(
+                                      color: AppColors.grey6,
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(18)))),
+                                  height: 120,
+                                  child: Column(
+                                    children: [
+                                      SizedBox(
+                                        height: 15,
+                                      ),
+                                      Text(
+                                        'Paid',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                      Text(
+                                        '0',
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            fontWeight: FontWeight.w800),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Padding(
+                                padding: const EdgeInsets.all(2.0),
+                                child: Container(
+                                  decoration: (const BoxDecoration(
+                                      color: AppColors.grey6,
+                                      borderRadius: BorderRadius.all(
+                                          Radius.circular(18)))),
+                                  height: 120,
+                                  child: Column(
+                                    children: [
+                                      SizedBox(
+                                        height: 15,
+                                      ),
+                                      Text(
+                                        'Overdue',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w600),
+                                      ),
+                                      Text(
+                                        '0',
+                                        style: TextStyle(
+                                            fontSize: 40,
+                                            fontWeight: FontWeight.w800),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                  child: Container(
+                    height: 50,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.red,
+                    ),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Expanded(child: Center(child: Text('A'))),
+                        Expanded(child: Center(child: Text('B'))),
+                        Expanded(child: Center(child: Text('C'))),
+                        Expanded(child: Center(child: Text('D'))),
+                        Expanded(child: Center(child: Text('E'))),
+                      ],
+                    )
+                  ),
+                  )
+                
               ],
             ),
           ),
