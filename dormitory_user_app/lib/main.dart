@@ -1,6 +1,8 @@
 import 'package:dormitory_user_app/responsive/mobile_layout_screen.dart';
 import 'package:dormitory_user_app/responsive/responsive_layout_screen.dart';
 import 'package:dormitory_user_app/responsive/web_layout_screen.dart';
+import 'package:dormitory_user_app/screen/Testpayment.dart';
+import 'package:dormitory_user_app/screen/historybill.dart';
 import 'package:dormitory_user_app/screen/payment.dart';
 import 'package:dormitory_user_app/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -18,10 +20,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Dormitory APP',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: mobileBackgroundColor,
+      theme: ThemeData.light().copyWith(
+        scaffoldBackgroundColor: primaryColor,
       ),
-      home: const Payment(),
+      home: const //historybill(),
+      
+      Testpayment(),
+      
+      //Payment(),
       
       //SplashScreen(),
       
