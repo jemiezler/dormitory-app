@@ -1,7 +1,7 @@
-import 'package:dormitory_user_app/features/user_auth/firebase_auth_implementation/firebase_auth_services.dart';
-import 'package:dormitory_user_app/features/user_auth/screens/pages/login_page.dart';
-import 'package:dormitory_user_app/features/user_auth/screens/widgets/form_container_widget.dart';
-import 'package:dormitory_user_app/global/common/toast.dart';
+import 'package:dormitory_app/features/user_auth/firebase_auth_implementation/firebase_auth_services.dart';
+import 'package:dormitory_app/features/user_auth/screens/pages/login_page.dart';
+import 'package:dormitory_app/features/user_auth/screens/widgets/form_container_widget.dart';
+import 'package:dormitory_app/global/common/toast.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

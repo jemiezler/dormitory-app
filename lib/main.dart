@@ -1,14 +1,12 @@
 import 'dart:io';
 
-import 'package:dormitory_user_app/features/app/splash_screen/splash_screen.dart';
-import 'package:dormitory_user_app/features/user_auth/screens/pages/admin_dashboard.dart';
-import 'package:dormitory_user_app/features/user_auth/screens/pages/home_page.dart';
-import 'package:dormitory_user_app/features/user_auth/screens/pages/login_page.dart';
-import 'package:dormitory_user_app/features/user_auth/screens/pages/sign_up_page.dart';
+import 'package:dormitory_app/features/app/splash_screen/splash_screen.dart';
+import 'package:dormitory_app/features/user_auth/screens/pages/admin_dashboard.dart';
+import 'package:dormitory_app/features/user_auth/screens/pages/login_page.dart';
+import 'package:dormitory_app/features/user_auth/screens/pages/sign_up_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart'; // Import Firebase Auth
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   kIsWeb

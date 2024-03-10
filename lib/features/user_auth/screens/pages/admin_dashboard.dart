@@ -1,8 +1,5 @@
-import 'package:dormitory_user_app/navigation/custom_nav.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:dormitory_app/global/util/color.dart' as AppColors;
 import 'package:flutter/material.dart';
-import 'package:dormitory_user_app/global/util/color.dart' as AppColors;
-import 'package:flutter/widgets.dart';
 
 class AdminDashboard extends StatefulWidget {
   const AdminDashboard({super.key});
