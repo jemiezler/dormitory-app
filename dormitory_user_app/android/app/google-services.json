@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "352442260144",
+    "project_id": "dorminic-co",
+    "storage_bucket": "dorminic-co.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352442260144:android:93cad946b06f488194f975",
+        "android_client_info": {
+          "package_name": "com.example.dormitory_user_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352442260144-t63dgnrc87hau9eks2l1t04viujgq5cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjGhe0qWV34rgqQdo1QhefXbwvAWVswFM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352442260144-t63dgnrc87hau9eks2l1t04viujgq5cb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "352442260144-v5ovptt64i12dbg01dq9asa3ievmp60h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.dormitoryUserApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
